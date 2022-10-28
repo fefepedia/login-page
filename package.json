@@ -1,0 +1,41 @@
+{
+  "name": "0126-login-form",
+  "version": "1.0.0",
+  "description": "React and TypeScript example starter project",
+  "keywords": [
+    "starter",
+    "typescript",
+    "react"
+  ],
+  "main": "src/index.tsx",
+  "dependencies": {
+    "@apollo/client": "^3.3.7",
+    "graphql": "15.4.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-hook-form": "^6.14.2",
+    "react-router-dom": "^5.2.0",
+    "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.0",
+    "@types/react-dom": "17.0.0",
+    "@types/react-router-dom": "^5.1.7",
+    "apollo": "^2.32.1",
+    "react-scripts": "^4.0.1",
+    "typescript": "^4.1.3"
+  },
+  "scripts": {
+    "start": "npm run codegen:build && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "codegen:build": "rimraf ./src/__generated__ && apollo client:codegen src/__generated__ --outputFlat --target=typescript"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
